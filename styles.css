@@ -983,16 +983,26 @@ ul, ol { list-style: none; }
 }
 
 .species-card__photo {
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.8rem;
+  height: 180px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
-.species-card__photo--tree    { background: linear-gradient(135deg, #2D6E3C, #5A9E60); }
-.species-card__photo--grass   { background: linear-gradient(135deg, #4A7C59, #8FB88A); }
-.species-card__photo--ground  { background: linear-gradient(135deg, #3A6B3C, #6FAE72); }
+.species-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s var(--transition);
+}
+
+.species-card:hover .species-card__photo img {
+  transform: scale(1.05);
+}
+
+.species-card__photo--tree    { background: #2D6E3C; }
+.species-card__photo--grass   { background: #4A7C59; }
+.species-card__photo--ground  { background: #3A6B3C; }
 
 .species-card__body {
   padding: 20px 20px 24px;
