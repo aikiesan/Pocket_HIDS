@@ -1,0 +1,12 @@
+# Source PNGs (large — use webp_output/ for the site)
+3drenders/*.png
+
+# Local docs / project files
+Pocket_HIDS_Unicamp/
+"PROJETO UNICAMP POCKET HUB.md"
+
+# IDE / OS
+.claude/
+.DS_Store
+Thumbs.db
+*.swp
