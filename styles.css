@@ -763,8 +763,9 @@ ul, ol { list-style: none; }
 .mobile-nav__tab.active { color: var(--color-accent); }
 
 .mobile-nav__icon {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   line-height: 1;
+  display: block;
 }
 
 /* ============================================================
