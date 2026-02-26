@@ -1,5 +1,5 @@
 /* ============================================================
-   UNICAMP Pocket Hub — styles.css
+   UNICAMP Pocket HIDS — styles.css
    ============================================================ */
 
 /* ---------- CSS Custom Properties ---------- */
@@ -853,4 +853,215 @@ ul, ol { list-style: none; }
 
   .lightbox__prev { left: 8px; }
   .lightbox__next { right: 8px; }
+}
+
+/* ============================================================
+   NAVBAR — ACTIVE LINK
+   ============================================================ */
+.navbar__links a.active {
+  color: var(--color-accent);
+}
+.navbar__links a.active::after {
+  width: 100%;
+}
+
+/* ============================================================
+   QUICK-ACCESS CARDS (index.html)
+   ============================================================ */
+.quick-section {
+  background: var(--color-surface);
+}
+
+.quick-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.quick-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--color-bg);
+  border: 1px solid rgba(58,125,68,0.15);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  transition: transform 0.25s var(--transition), box-shadow 0.25s;
+}
+
+.quick-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(58,125,68,0.12);
+}
+
+.quick-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.quick-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.quick-card__desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.quick-card__link {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+  .quick-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .quick-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   VEGETAÇÃO — SPECIES CARDS
+   ============================================================ */
+.veg-intro {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 760px;
+  line-height: 1.7;
+  margin-bottom: 64px;
+}
+
+.veg-section {
+  margin-bottom: 72px;
+}
+
+.veg-section__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(58,125,68,0.15);
+}
+
+.species-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.species-card {
+  background: var(--color-bg);
+  border: 1px solid rgba(58,125,68,0.15);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s var(--transition), box-shadow 0.25s;
+}
+
+.species-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(58,125,68,0.12);
+}
+
+.species-card__photo {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+}
+
+.species-card__photo--tree    { background: linear-gradient(135deg, #2D6E3C, #5A9E60); }
+.species-card__photo--grass   { background: linear-gradient(135deg, #4A7C59, #8FB88A); }
+.species-card__photo--ground  { background: linear-gradient(135deg, #3A6B3C, #6FAE72); }
+
+.species-card__body {
+  padding: 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.species-card__badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+.species-card__badge--tree   { background: rgba(45,110,60,0.12);  color: #2D6E3C; }
+.species-card__badge--grass  { background: rgba(74,124,89,0.12);  color: #3A6040; }
+.species-card__badge--ground { background: rgba(58,125,68,0.12);  color: var(--color-accent); }
+
+.species-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 4px;
+}
+
+.species-card__sci {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.species-attrs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+
+.species-attr {
+  font-size: 0.75rem;
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  padding: 3px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.species-card__desc {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .species-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .species-grid {
+    grid-template-columns: 1fr;
+  }
 }
