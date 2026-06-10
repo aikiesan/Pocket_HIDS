@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNICAMP Pocket HIDS — NIPE/UNICAMP</title>
+  <meta name="description" content="Pocket HIDS — Habitat de Inovação, Demonstração e Sustentabilidade. Laboratório vivo de 1.800m² para convívio, experimentação e demonstração de tecnologias sustentáveis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a class="navbar__brand" href="index.html">
+        <span class="navbar__brand-dot"></span>Pocket HIDS
+      </a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html">Projeto</a></li>
+        <li><a href="programa.html">Programa</a></li>
+        <li><a href="vegetacao.html">Vegetação</a></li>
+        <li><a href="plantas.html">Plantas</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="inicio" class="hero">
+    <div class="hero__bg" id="hero-bg"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow fade-in">NIPE / UNICAMP &nbsp;·&nbsp; DExS &nbsp;·&nbsp; Dez/2025</p>
+      <h1 class="hero__title fade-in">UNICAMP<br><span>Pocket HIDS</span></h1>
+      <p class="hero__subtitle fade-in">Laboratório vivo de inovação aberta em sustentabilidade</p>
+      <p class="hero__tagline fade-in">1.800 m² de convívio, experimentação e demonstração de tecnologias sustentáveis no coração do campus.</p>
+      <a href="projeto.html" class="hero__cta fade-in">Conheça o projeto</a>
+    </div>
+    <div class="hero__scroll-hint fade-in" aria-hidden="true">
+      <span>role para baixo</span>
+      <div class="hero__scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ========== QUICK-ACCESS CARDS ========== -->
+  <section class="section quick-section">
+    <div class="section__inner">
+      <h2 class="section__title fade-in">Explore o Projeto</h2>
+      <div class="quick-cards">
+
+        <a href="projeto.html" class="quick-card fade-in">
+          <div class="quick-card__icon">📋</div>
+          <h3 class="quick-card__title">Projeto</h3>
+          <p class="quick-card__desc">Sumário executivo, objetivos estratégicos e fases de implantação em 18–24 meses.</p>
+          <span class="quick-card__link">Ver projeto →</span>
+        </a>
+
+        <a href="programa.html" class="quick-card fade-in">
+          <div class="quick-card__icon">🏗️</div>
+          <h3 class="quick-card__title">Programa</h3>
+          <p class="quick-card__desc">As três zonas arquitetônicas: Núcleo de Convívio, Infraestrutura Experimental e Demonstração Tecnológica.</p>
+          <span class="quick-card__link">Ver programa →</span>
+        </a>
+
+        <a href="vegetacao.html" class="quick-card fade-in">
+          <div class="quick-card__icon">🌿</div>
+          <h3 class="quick-card__title">Vegetação</h3>
+          <p class="quick-card__desc">Espécies nativas do Cerrado e Mata Atlântica — árvores, gramado e forrações sustentáveis.</p>
+          <span class="quick-card__link">Ver espécies →</span>
+        </a>
+
+        <a href="plantas.html" class="quick-card fade-in">
+          <div class="quick-card__icon">📐</div>
+          <h3 class="quick-card__title">Plantas Baixas</h3>
+          <p class="quick-card__desc">Setorização funcional e implantação geral em dois layouts complementares.</p>
+          <span class="quick-card__link">Ver plantas →</span>
+        </a>
+
+        <a href="galeria.html" class="quick-card fade-in">
+          <div class="quick-card__icon">🖼️</div>
+          <h3 class="quick-card__title">Galeria 3D</h3>
+          <p class="quick-card__desc">24 visualizações arquitetônicas com pós-produção. Clique para ampliar em lightbox.</p>
+          <span class="quick-card__link">Ver galeria →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__project">Projeto NIPE / UNICAMP &mdash; Diretoria Executiva de Sustentabilidade (DExS)</p>
+      <p class="footer__credits">Visualizações 3D: Lucas Nakamura Cerejo</p>
+      <p class="footer__year">2025 / 2026</p>
+    </div>
+  </footer>
+
+  <!-- ========== MOBILE BOTTOM NAV ========== -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação mobile">
+    <button class="mobile-nav__tab" data-href="index.html">
+      <span class="mobile-nav__icon">🏠</span>
+      <span>Início</span>
+    </button>
+    <button class="mobile-nav__tab" data-href="projeto.html">
+      <span class="mobile-nav__icon">📋</span>
+      <span>Projeto</span>
+    </button>
+    <button class="mobile-nav__tab" data-href="vegetacao.html">
+      <span class="mobile-nav__icon">🌿</span>
+      <span>Vegetação</span>
+    </button>
+    <button class="mobile-nav__tab" data-href="galeria.html">
+      <span class="mobile-nav__icon">🖼️</span>
+      <span>Galeria</span>
+    </button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

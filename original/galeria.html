@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria 3D — UNICAMP Pocket HIDS</title>
+  <meta name="description" content="Galeria de visualizações 3D do UNICAMP Pocket HIDS — 24 renders arquitetônicos com pós-produção." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a class="navbar__brand" href="index.html">
+        <span class="navbar__brand-dot"></span>Pocket HIDS
+      </a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html">Projeto</a></li>
+        <li><a href="programa.html">Programa</a></li>
+        <li><a href="vegetacao.html">Vegetação</a></li>
+        <li><a href="plantas.html">Plantas</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== GALERIA 3D ========== -->
+  <section id="galeria" class="section" style="padding-top: calc(var(--nav-h) + 60px);">
+    <div class="section__inner">
+      <h2 class="section__title fade-in">Galeria 3D</h2>
+      <p class="section__subtitle fade-in">Visualizações arquitetônicas do UNICAMP Pocket HIDS. Clique para ampliar.</p>
+
+      <div class="gallery" id="gallery">
+
+        <!-- Enhanced post-production renders -->
+        <button class="gallery__item fade-in" data-index="0" aria-label="Abrir render 1 em tela cheia">
+          <img src="3drenders/webp_output/enchanced_previas_post_production.webp" alt="Render pós-produção 1 — Vista geral do Pocket HIDS" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="1" aria-label="Abrir render 2 em tela cheia">
+          <img src="3drenders/webp_output/enchanced_previas_post_production2.webp" alt="Render pós-produção 2 — Deck principal e pergolado solar" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="2" aria-label="Abrir render 3 em tela cheia">
+          <img src="3drenders/webp_output/enchanced_previas_post_production3.webp" alt="Render pós-produção 3 — Área de convívio" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="3" aria-label="Abrir render 4 em tela cheia">
+          <img src="3drenders/webp_output/enchanced_previas_post_production4.webp" alt="Render pós-produção 4 — Perspectiva geral" loading="lazy" />
+        </button>
+
+        <!-- Scene 1-3 (Pocket_HIDS2) -->
+        <button class="gallery__item fade-in" data-index="4" aria-label="Abrir cena 1 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDS2Scene 1.webp" alt="Cena 1 — Entrada principal" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="5" aria-label="Abrir cena 2 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDS2Scene 2.webp" alt="Cena 2 — Vista lateral" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="6" aria-label="Abrir cena 3 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDS2Scene 3.webp" alt="Cena 3 — Anfiteatro verde" loading="lazy" />
+        </button>
+
+        <!-- Scenes 4–20 -->
+        <button class="gallery__item fade-in" data-index="7" aria-label="Abrir cena 4 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 4.webp" alt="Cena 4 — Zona de convívio" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="8" aria-label="Abrir cena 5 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 5.webp" alt="Cena 5 — Jardins nativos" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="9" aria-label="Abrir cena 6 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 6.webp" alt="Cena 6 — Infraestrutura experimental" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="10" aria-label="Abrir cena 7 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 7.webp" alt="Cena 7 — Vista aérea" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="11" aria-label="Abrir cena 8 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 8.webp" alt="Cena 8 — Deck coberto" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="12" aria-label="Abrir cena 9 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 9.webp" alt="Cena 9 — Praça de chegada" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="13" aria-label="Abrir cena 10 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 10.webp" alt="Cena 10 — Pergolado solar" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="14" aria-label="Abrir cena 11 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 11.webp" alt="Cena 11 — Área de estar" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="15" aria-label="Abrir cena 12 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 12.webp" alt="Cena 12 — Horta experimental" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="16" aria-label="Abrir cena 13 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 13.webp" alt="Cena 13 — Zona de demonstração" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="17" aria-label="Abrir cena 14 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 14.webp" alt="Cena 14 — Vista noturna" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="18" aria-label="Abrir cena 15 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 15.webp" alt="Cena 15 — Iluminação solar" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="19" aria-label="Abrir cena 16 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 16.webp" alt="Cena 16 — Perspectiva interior" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="20" aria-label="Abrir cena 17 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 17.webp" alt="Cena 17 — Cobertura verde" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="21" aria-label="Abrir cena 18 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 18.webp" alt="Cena 18 — Passarela central" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="22" aria-label="Abrir cena 19 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 19.webp" alt="Cena 19 — Biorretenção" loading="lazy" />
+        </button>
+        <button class="gallery__item fade-in" data-index="23" aria-label="Abrir cena 20 em tela cheia">
+          <img src="3drenders/webp_output/previas_Pocket_HIDSScene 20.webp" alt="Cena 20 — Vista panorâmica final" loading="lazy" />
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__project">Projeto NIPE / UNICAMP &mdash; Diretoria Executiva de Sustentabilidade (DExS)</p>
+      <p class="footer__credits">Visualizações 3D: Lucas Nakamura Cerejo</p>
+      <p class="footer__year">2025 / 2026</p>
+    </div>
+  </footer>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagem" hidden>
+    <button class="lightbox__close" id="lb-close" aria-label="Fechar">&times;</button>
+    <button class="lightbox__prev"  id="lb-prev"  aria-label="Anterior">&#8592;</button>
+    <button class="lightbox__next"  id="lb-next"  aria-label="Pr&oacute;xima">&#8594;</button>
+    <div class="lightbox__img-wrap">
+      <img class="lightbox__img" id="lb-img" src="" alt="" />
+    </div>
+    <p class="lightbox__counter" id="lb-counter" aria-live="polite"></p>
+  </div>
+
+  <!-- ========== MOBILE BOTTOM NAV ========== -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação mobile">
+    <button class="mobile-nav__tab" data-href="index.html">
+      <span class="mobile-nav__icon">🏠</span>
+      <span>Início</span>
+    </button>
+    <button class="mobile-nav__tab" data-href="projeto.html">
+      <span class="mobile-nav__icon">📋</span>
+      <span>Projeto</span>
+    </button>
+    <button class="mobile-nav__tab" data-href="vegetacao.html">
+      <span class="mobile-nav__icon">🌿</span>
+      <span>Vegetação</span>
+    </button>
+    <button class="mobile-nav__tab" data-href="galeria.html">
+      <span class="mobile-nav__icon">🖼️</span>
+      <span>Galeria</span>
+    </button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
