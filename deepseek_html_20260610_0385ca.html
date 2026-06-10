@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ABIOVE APROBIO 2026 – Complementação HARVEX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background-color: #f2f4f8;
+            padding: 40px 20px;
+            color: #1e2a3a;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+            overflow: hidden;
+            padding: 32px 40px;
+        }
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            color: #0b3b2f;
+            border-left: 5px solid #2c7a4d;
+            padding-left: 20px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 28px 0 16px 0;
+            color: #1f5e3c;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 6px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 20px 0 12px 0;
+            color: #2c3e2f;
+        }
+        .email-header {
+            background: #f8fafc;
+            border-left: 4px solid #cbd5e1;
+            padding: 16px 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            border-radius: 12px;
+        }
+        .email-subject {
+            font-weight: 700;
+            color: #0f3b2c;
+            margin-bottom: 8px;
+        }
+        .email-body {
+            background: #ffffff;
+            padding: 16px 20px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            margin: 16px 0;
+            line-height: 1.5;
+        }
+        .highlight-box {
+            background: #fff7e5;
+            border-left: 5px solid #e6b422;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.9rem;
+        }
+        th {
+            background: #eef2f5;
+            text-align: left;
+            padding: 10px 12px;
+            font-weight: 600;
+            border-bottom: 1px solid #cbd5e1;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            background: #e2e8f0;
+            color: #1e2a3a;
+        }
+        .status-pronto {
+            background: #c6f7d0;
+            color: #0a3b1e;
+        }
+        .status-pendente {
+            background: #ffe1b9;
+            color: #9b4a00;
+        }
+        .status-andamento {
+            background: #d9e6ff;
+            color: #004080;
+        }
+        .badge {
+            background: #2c7a4d;
+            color: white;
+            font-size: 0.7rem;
+            border-radius: 20px;
+            padding: 2px 8px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        hr {
+            margin: 24px 0;
+            border: none;
+            height: 1px;
+            background: #e2e8f0;
+        }
+        .footer-note {
+            margin-top: 32px;
+            font-size: 0.8rem;
+            color: #5b6e8c;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+        @media (max-width: 640px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🌱 Projeto ABIOVE APROBIO 2026<br>Avaliação dos Impactos do ILUC da Expansão da Soja Brasileira (2006–2024)</h1>
+    
+    <div class="highlight-box">
+        <strong>📌 Nota interna – situação dos dados HARVEX</strong><br>
+        Os dados recebidos de Joel Risso (HARVEX) em 29/04/2026 não puderam ser aproveitados no modelo GTAP devido a distorções metodológicas e ausência de compatibilidade com estatísticas oficiais (PAM, CONAB). A equipe NIPE solicitará os <strong>dados primários (talhões/raster)</strong> em reunião no dia <strong>11/06/2026</strong>.
+    </div>
+
+    <!-- ========== E-MAIL RASCUNHO (NÃO ENVIADO) ========== -->
+    <h2>📧 Rascunho de e-mail para Joel Risso (HARVEX) – <span style="font-weight:normal">não enviado</span></h2>
+    <div class="email-header">
+        <div><strong>De:</strong> Lucas Nakamura Cerejo (NIPE-UNICAMP)</div>
+        <div><strong>Para:</strong> Joel Risso (HARVEX)</div>
+        <div><strong>Assunto:</strong> Complementação da entrega HARVEX – necessidade dos dados primários (talhões/raster) para integração com pipeline NIPE/GTAP</div>
+        <div><strong>Data:</strong> 10 de junho de 2026</div>
+    </div>
+    
+    <div class="email-body">
+        <p>Prezado Joel,</p>
+        <p>Agradecemos novamente pela documentação detalhada e pelo esforço na elaboração das matrizes de transição para 2008, 2017 e 2024.</p>
+        <p>Após análise aprofundada pela equipe do NIPE e discussão com o prof. Marcelo Cunha e Rubens Lamparelli, identificamos que as <strong>matrizes agregadas entregues</strong>, embora internamente coerentes com sua metodologia, apresentam <strong>distorções significativas</strong> quando comparadas às estatísticas oficiais (PAM/IBGE, CONAB) – distorções que inviabilizam seu uso direto no modelo GTAP.</p>
+        <p>Como já documentamos internamente, alguns exemplos são:</p>
+        <ul>
+            <li><strong>Ausência total de milho</strong> em Mato Grosso, Paraná, Mato Grosso do Sul e Goiás em 2017 (enquanto o PAM registra ~14 milhões de hectares).</li>
+            <li><strong>Superestimação da soja</strong> em regiões como Passo Fundo (RS), na faixa de 11% a 19%.</li>
+            <li><strong>Omissão de cana-de-açúcar</strong> nos polos tradicionais do Nordeste (Alagoas, Pernambuco).</li>
+        </ul>
+        <p>Esses problemas decorrem, fundamentalmente, de decisões metodológicas adequadas à auditoria de talhões, mas não ao equilíbrio geral exigido pelo GTAP.</p>
+        <p>O que torna possível uma colaboração produtiva, no entanto, é a existência dos <strong>dados primários</strong>: os vetores de talhão da Serasa (especialmente os de 2024) e os rasters anteriores à fusão hierárquica. Esses insumos, que você certamente utilizou internamente, têm altíssima precisão espacial e seriam de grande valia para o nosso pipeline, que já mantém consistência temporal e balanço de massa.</p>
+        <p>Infelizmente, esses dados primários <strong>não constam na entrega que recebemos</strong>. Recebemos apenas as matrizes de transição já processadas (15×15 por região intermediária), que, pelas razões expostas, não podemos aproveitar diretamente.</p>
+        <p>Para que possamos, de fato, integrar o melhor do seu trabalho ao modelo GTAP, precisamos que você nos forneça, <strong>em complemento à entrega já realizada</strong>:</p>
+        <ul>
+            <li>Os <strong>vetores de talhão</strong> (formato GeoPackage ou Shapefile) para cada cultura (soja, milho 1ª safra, milho 2ª safra, cana) e para cada ano disponível (especialmente 2024, e onde houver para 2008/2017 em AMZ+CER).</li>
+            <li>Opcionalmente, os <strong>rasters de uso e cobertura da terra</strong> anteriores à fusão hierárquica (por exemplo, o resultado após a etapa 4 do seu fluxo, antes da propagação retroativa e da fusão final).</li>
+        </ul>
+        <p>Com esses dados brutos, o NIPE pode fazer uma integração controlada: usaremos seus talhões como máscara de alta resolução para distribuir espacialmente os totais regionais calibrados pelo PAM/CONAB, sem incorrer nas distorções decorrentes da sua lógica de propagação e exclusividade.</p>
+        <p><strong>Temas para discutir na reunião (11/06):</strong></p>
+        <ul>
+            <li>Discutir abertamente as divergências metodológicas, sem qualquer intenção de desqualificar o trabalho.</li>
+            <li>Esclarecer quais dados primários estão disponíveis e em que formato.</li>
+            <li>Definir um cronograma curto para a transferência desses arquivos.</li>
+            <li>Estabelecer a coautoria nos produtos finais (mapas e matrizes que efetivamente alimentarão o GTAP).</li>
+        </ul>
+        <p>Entendemos que o escopo inicial do seu contrato pode ter sido apenas a entrega das matrizes agregadas. Para que o projeto seja tecnicamente viável, o compartilhamento dos dados primários é imprescindível.</p>
+        <p>Estamos à disposição para alinhar os aspectos de confidencialidade e propriedade intelectual – tudo pode ser formalizado em um aditivo simples, se necessário.</p>
+        <p>Agradecemos pela compreensão e estamos certos de que, com essa complementação, construiremos juntos um produto de excelência para a ABIOVE.</p>
+        <p>Atenciosamente,<br>
+        <strong>Lucas Nakamura Cerejo</strong><br>
+        NIPE-UNICAMP</p>
+    </div>
+
+    <!-- ========== STATUS DOS PRODUTOS ========== -->
+    <h2>📄 Status atual dos documentos e produtos</h2>
+    <table>
+        <thead>
+            <tr><th>Produto</th><th>Conteúdo</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>D1</strong></td><td>Nota Técnica – Fontes e Metodologia LULC</td><td><span class="status-badge status-pronto">✅ PRONTO</span></td></tr>
+            <tr><td><strong>D2</strong></td><td>Relatório de Diagnóstico HARVEX (dados corrigidos)</td><td><span class="status-badge status-pendente">⏳ Aguardando dados Joel</span></td></tr>
+            <tr><td><strong>D3</strong></td><td>Protocolo de Reconciliação CP2B × HARVEX</td><td><span class="status-badge status-pronto">✅ PRONTO</span></td></tr>
+            <tr><td><strong>D4</strong></td><td>Dicionário de Dados – Pipeline 15 classes</td><td><span class="status-badge status-pronto">✅ PRONTO</span></td></tr>
+            <tr><td><strong>D8</strong></td><td>Relatório de Calibração e Harmonização (curva Igor)</td><td><span class="status-badge status-andamento">🔄 A ser escrito (Igor)</span></td></tr>
+            <tr><td><strong>D11</strong></td><td>Relatório Final Consolidado (já incorpora D5, D6, D7)</td><td><span class="status-badge status-andamento">🔄 Em andamento</span></td></tr>
+            <tr><td><strong>D9</strong></td><td>133 fichas HTML (RGINTs)</td><td><span class="status-badge status-pronto">✅ Pipeline pronto – aguarda reconciliação final</span></td></tr>
+            <tr><td><strong>D10</strong></td><td>Plataforma web (acesso às fichas)</td><td><span class="status-badge status-pendente">⚖️ Decisão pendente (hospedagem)</span></td></tr>
+        </tbody>
+    </table>
+
+    <!-- ========== DECISÕES PENDENTES ========== -->
+    <h2>⚖️ Decisões estratégicas pendentes (com ABIOVE/APROBIO)</h2>
+    <ul>
+        <li><strong>🌐 Plataforma web (D10):</strong> Hospedar no NIPE ou transferir completamente para ABIOVE/APROBIO fazer deploy próprio? <br>
+            <em>Recomendação:</em> Entregar repositório estático (GitHub Pages) e oferecer hospedagem temporária de 6 meses pelo NIPE.</li>
+        <li><strong>📚 Publicação do banco de dados no REDU (Unicamp):</strong> As matrizes LULC finais (133 RGINTs, 15 classes) podem ser abertas com DOI? <br>
+            <em>Necessário</em> verificar restrições contratuais com HARVEX (dados Serasa). Se autorizado, publicar versão com dados públicos + resultados reconciliados anonimizados.</li>
+        <li><strong>🗂️ Dados primários HARVEX:</strong> Decisão na reunião de 11/06 sobre fornecimento de talhões/raster para permitir integração técnica.</li>
+    </ul>
+
+    <h2>📦 Estrutura final da entrega (pacote para ABIOVE/APROBIO)</h2>
+    <ul>
+        <li><strong>Documentos técnicos</strong> (D1, D2, D3, D4, D8, D11) – formato DOCX</li>
+        <li><strong>133 matrizes LULC 15×15</strong> (Excel por RGINT)</li>
+        <li><strong>133 fichas HTML</strong> (Sankey + mapas + séries temporais)</li>
+        <li><strong>Plataforma web completa</strong> (HTML/CSS/JS estático)</li>
+        <li><strong>Cadernos Python (Jupyter)</strong> com pipeline documentado</li>
+        <li><strong>Banco de dados opcional</strong> (REDU – mediante autorização)</li>
+    </ul>
+
+    <div class="highlight-box">
+        <strong>📅 Próximos passos (junho/2026)</strong><br>
+        1️⃣ Reunião com Joel (11/06) – solicitar dados primários.<br>
+        2️⃣ Recebimento e validação dos dados corrigidos ou talhões.<br>
+        3️⃣ Reconciliação final das matrizes 15 classes (133 RGINTs).<br>
+        4️⃣ Regeneração das fichas HTML e finalização do D11.<br>
+        5️⃣ Definição com ABIOVE sobre hospedagem e REDU.<br>
+        6️⃣ Entrega final do pacote completo.
+    </div>
+
+    <div class="footer-note">
+        NIPE-UNICAMP – Projeto ABIOVE Biocombustíveis 2026<br>
+        Coordenação: Lucas Nakamura Cerejo | Junho de 2026
+    </div>
+</div>
+</body>
+</html>

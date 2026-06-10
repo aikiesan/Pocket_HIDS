@@ -1,0 +1,9 @@
+# Excluir arquivos grandes de apresentação que não são necessários no site
+*.pptx
+*.pdf
+pocket_hids.zip
+pocket_hids_temp/
+
+# Sistema
+.DS_Store
+Thumbs.db
