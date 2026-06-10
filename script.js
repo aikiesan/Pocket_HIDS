@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
             pausePresentation();
         }
         
-        // Dynamic Radial SVG redraw (Slide 12 specific)
-        if (currentSlide === 11) { // 0-indexed, so 11 is Slide 12
+        // Dynamic Radial SVG redraw — fires for whichever slide holds the diagram
+        if (slides[currentSlide].querySelector('#radial-svg-connections')) {
             drawRadialConnections();
         }
     }
@@ -437,10 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
             caption: item.dataset.caption || caption
         });
         
-        item.addEventListener('click', () => {
-            currentGalleryIndex = idx;
-            openLightbox();
-        });
+        // Gallery is static (no click-to-expand) — images shown directly on the slide
     });
     
     function openLightbox() {
@@ -491,11 +488,11 @@ document.addEventListener('DOMContentLoaded', () => {
         transicao: "O anfiteatro em patamares verdes fornece um espaço de assembleia popular, educação e engajamento comunitário. A ciência cidadã é incentivada pela visualização pública de métricas de impacto climático do projeto, criando pontes de governança democrática."
     };
     
-    pavilionCards.forEach(card => {
+    if (detailTitle && detailDesc) pavilionCards.forEach(card => {
         card.addEventListener('click', () => {
             pavilionCards.forEach(c => c.classList.remove('active'));
             card.classList.add('active');
-            
+
             const pavKey = card.dataset.pavilion;
             detailTitle.style.opacity = 0;
             detailDesc.style.opacity = 0;
@@ -543,7 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
     
-    timelineSteps.forEach((step, idx) => {
+    if (timelineTitle && timelineDesc) timelineSteps.forEach((step, idx) => {
         step.addEventListener('click', () => {
             timelineSteps.forEach(s => s.classList.remove('active'));
             step.classList.add('active');
@@ -648,7 +645,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Redraw connections if slide becomes active
     // We already do this inside goToSlide, but let's add a general resize bind
     window.addEventListener('resize', () => {
-        if (currentSlide === 11) {
+        if (slides[currentSlide].querySelector('#radial-svg-connections')) {
             setTimeout(drawRadialConnections, 100);
         }
     });
