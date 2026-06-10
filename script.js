@@ -124,8 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
         outlineItems.forEach((item, idx) => {
             if (idx === currentSlide) {
                 item.classList.add('active');
-                // Scroll outline list to center active item if needed
-                item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                // Scroll outline list to center active item if needed (only if drawer is open)
+                if (drawer.classList.contains('open')) {
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
             } else {
                 item.classList.remove('active');
             }
@@ -341,6 +343,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function openDrawer() {
         drawer.classList.add('open');
         outlineBtn.classList.add('active');
+        
+        // Scroll active item into view when drawer opens
+        setTimeout(() => {
+            const activeItem = outlineList.querySelector('.outline-item.active');
+            if (activeItem) {
+                activeItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }, 150);
     }
     
     function closeDrawer() {
