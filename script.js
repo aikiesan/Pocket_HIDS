@@ -386,14 +386,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const pathMilestoneTexts = [
         {
             title: "Estacionamento do CT (1.200m²)",
-            body: "Requalificação do espaço subutilizado e arborizado do CT. Implantação de sensores de controle de vagas em tempo real e pontos de carregamento rápido para veículos elétricos (incentivo à mobilidade de baixo carbono). Os conselheiros e visitantes do CONSUN estacionam aqui."
+            body: "Requalificação do espaço subutilizado e arborizado do CT. Implantação de sensores de controle de vagas em tempo real e pontos de carregamento rápido para veículos elétricos (incentivo à mobilidade de baixo carbono). Os conselheiros e visitantes do CONSU estacionam aqui."
         },
         {
             title: "Pocket HIDS: O Percurso Vivo (100 metros)",
             body: "O trajeto de 100 metros se transforma em um parque urbano e laboratório vivo. Ao invés de uma caminhada monótona, o pedestre desfruta de pergolados solares, jardins de chuva que drenam águas pluviais, um hotel de abelhas nativas polinizadoras e painéis que monitoram a qualidade ambiental."
         },
         {
-            title: "Prédio do Novo CONSUN (Antigo Banco do Brasil)",
+            title: "Prédio do Novo CONSU (Antigo Banco do Brasil)",
             body: "O destino final. Uma chegada majestosa, acessível e integrada. O percurso conecta diretamente a via do estacionamento à porta principal do prédio, promovendo a integração entre a governança máxima da Unicamp e o distrito de inovação territorial sustentável."
         }
     ];
